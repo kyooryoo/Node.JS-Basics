@@ -1,0 +1,59 @@
+# check current version of npm
+$ npm -v
+6.12.0
+
+# upgrade npm
+$ npm install npm -g
++ npm@6.12.0
+updated 1 package in 17.908s
+
+# for users from China mainland
+# use cnpm to facilitate npm access
+$ npm install -g cnpm --registry=https://registry.npm.taobao.org
+# can use cnpm instead of npm from here on
+
+# local install pachages to ./node_modules
+# should be imported with require() to use within project
+$ npm install express
+
+# global install pachages to /usr/local or the node dir
+# could be used directly from terminal
+$ npm install express -g
+
+# check installed global pachages
+$ npm list -g
+
+# check installed local pachages
+$ npm list
+
+# search a specific package
+$ npm search express
+
+# check version of a specific package
+$ npm list express
+
+# updage a specific package
+$ npm update express
+
+# uninstall a package
+$ npm uninstall express
+
+## following commands are used for publishing
+
+# create npm package
+$ npm init
+
+# register npm user
+$ npm adduser
+
+# publish npm package
+$ npm publish
+
+## note
+# version number x.y.z means major, sub and minor version
+# fixing bugs updates minor version z
+# adding compatible features updates sub version y
+# adding uncompatible big features updates major version x
+
+# more detail about npm commands:
+# https://npmjs.org/doc/
